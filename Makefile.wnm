@@ -6,8 +6,8 @@
 CC = cl
 
 # Normal flags
-CFLAGS = /nologo /MD /W3 /EHsc /O2 /I "." /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /c 
-LDFLAGS = /nologo /subsystem:console /incremental:no
+CFLAGS = /nologo /MD /W3 /EHsc /O2 /I "." /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /c /GUARD:CF
+LDFLAGS = /nologo /subsystem:console /incremental:no /GUARD:CF /DYNAMICBASE
 
 # Debugging flags
 #CFLAGS = /nologo /MDd /W3 /GX /Od /Gm /Zi /I "." /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /c
